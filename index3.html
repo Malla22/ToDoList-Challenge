@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>To Do List</title>
+
+</head>
+<body style="color: blanchedalmond; background-color: blueviolet">
+    <section class="container mt-10">
+        <section class="text-center">
+            <h1 class="display-5 mb-5"><strong>TO DO LIST</strong></h1>
+        </section>
+        <section class="main row justify-content-center">
+            <form action="" id="task-form" class="row justify-content-center mb-4" autocomplete="off" onsubmit="onFormSubmit()">
+                <section class="col-10 mb-3">
+                    <tabel for="yourName">Aktivitas</tabel>
+                    <input class="form-control" id="yourName" type="text" placeholder="Tulis Aktivitas Anda">
+                </section>
+                <section class="col-10 mb-3">
+                    <tabel for="taskName">Deskripsi</tabel>
+                    <input class="form-control" id="taskName" type="text" placeholder="Detail Aktivitas Anda...">
+                </section> 
+                <section class="col-10">
+                    <input class="btn btn-success add-btn" type="submit" value="submit">
+                    <input class="btn btn-primary add-btn" type="reset" value="Reset">
+                </section>
+            </form>
+            <td>
+                <section class="col-10 mt-5"></section>
+                <table class="table table-striped table-dark" id="task-list">
+                <thead>
+                    <tr>
+                        <th>Aktivitas</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                            
+                    </tbody>
+                </table>
+            </td>
+        </section>
+    </section>
+    <script src="script3.js"></script> 
+</body>
+</html>
